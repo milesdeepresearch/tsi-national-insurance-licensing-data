@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://milesdeepresearch.github.io/tsi-national-insurance-licensing-data/sitemap.xml
