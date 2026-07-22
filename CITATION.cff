@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this dataset, cite the canonical TSI National directory."
+title: "U.S. Insurance Licensing Resources - 50-State Dataset"
+type: dataset
+authors:
+  - name: "TSI National"
+publisher:
+  name: "Insurance Training Professionals LLC"
+version: "2026-07-22"
+date-released: "2026-07-22"
+url: "https://tsinational.com/insurance-licensing-and-ce-requirements-by-state/"
+repository-code: "https://github.com/milesdeepresearch/tsi-national-insurance-licensing-data"
+abstract: "A maintained directory of insurance licensing guides and current TSI course routes for all 50 U.S. states."
