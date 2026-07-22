@@ -2,6 +2,7 @@
 
 Machine-readable and human-readable links for insurance licensing research across all 50 U.S. states. This resource is maintained by **TSI National (Insurance Training Professionals LLC)**.
 
+- Interactive explorer: [Search all 50 state resources](https://milesdeepresearch.github.io/tsi-national-insurance-licensing-data/)
 - Canonical directory: [Insurance licensing and CE requirements by state](https://tsinational.com/insurance-licensing-and-ce-requirements-by-state/)
 - Canonical CSV: [Download the current 50-state dataset](https://tsinational.com/insurance-licensing-and-ce-requirements-by-state.csv)
 - Data files in this repository: [data/states.csv](data/states.csv) and [data/states.json](data/states.json)
