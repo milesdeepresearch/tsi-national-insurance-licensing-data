@@ -1,0 +1,97 @@
+{
+  "profile": "tabular-data-package",
+  "name": "tsi-national-insurance-licensing-data",
+  "title": "U.S. Insurance Licensing Resources - 50-State Dataset",
+  "description": "A maintained machine-readable directory of insurance licensing guides and current TSI National course routes for all 50 U.S. states.",
+  "homepage": "https://tsinational.com/insurance-licensing-and-ce-requirements-by-state/",
+  "version": "2026-07-22",
+  "created": "2026-07-22",
+  "keywords": [
+    "insurance-licensing",
+    "insurance-education",
+    "state-requirements",
+    "continuing-education",
+    "exam-preparation",
+    "open-data",
+    "united-states"
+  ],
+  "contributors": [
+    {
+      "title": "TSI National",
+      "role": "publisher",
+      "path": "https://tsinational.com/"
+    }
+  ],
+  "resources": [
+    {
+      "name": "states",
+      "title": "50-state insurance licensing resources",
+      "profile": "tabular-data-resource",
+      "path": "data/states.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "state_code",
+        "fields": [
+          {
+            "name": "state_code",
+            "type": "string",
+            "title": "Two-letter state code",
+            "constraints": {
+              "required": true,
+              "unique": true,
+              "pattern": "^[A-Z]{2}$"
+            }
+          },
+          {
+            "name": "state_name",
+            "type": "string",
+            "title": "State name",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "course_status",
+            "type": "string",
+            "title": "Current TSI course availability",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "available",
+                "not_currently_available"
+              ]
+            }
+          },
+          {
+            "name": "licensing_guide_url",
+            "type": "string",
+            "title": "Canonical licensing guide URL",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "course_url",
+            "type": "string",
+            "title": "Current TSI course route when available"
+          }
+        ]
+      }
+    },
+    {
+      "name": "states-json",
+      "title": "50-state insurance licensing resources with publisher metadata",
+      "profile": "data-resource",
+      "path": "data/states.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8"
+    }
+  ]
+}
